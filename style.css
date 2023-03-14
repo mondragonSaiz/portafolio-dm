@@ -1,7 +1,13 @@
+:root {
+  --azul: #454641;
+}
+
 body {
   background-color: aliceblue;
   margin-left: auto;
   margin-right: auto;
+  background-color: #2f3232;
+  font-family: "Roboto", sans-serif;
 }
 
 header {
@@ -9,7 +15,23 @@ header {
   justify-content: space-between;
   padding: 20px;
   align-items: center;
-  background-color: rgba(19, 19, 19, 0.95);
+  background-color: #131314;
+  background-image: linear-gradient(
+    160deg,
+    #131314 0%,
+    #0f2d29 50%,
+    #5c0a0a 100%
+  );
+}
+
+.avatar__image {
+  display: flex;
+  align-items: center;
+}
+
+.avatar__image p {
+  padding-left: 10px;
+  color: #e6e9dc;
 }
 
 .profile__pic {
@@ -26,8 +48,10 @@ nav ul li {
 }
 
 nav ul li a {
-  color: aliceblue;
-  text-decoration: none;
+  font-family: "Playfair Display", serif;
+  color: #e6e9dc;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
 }
 
 .aboutMe__container,
@@ -40,7 +64,7 @@ nav ul li a {
   min-height: 300px;
   display: flex;
   padding-right: 10px;
-  background-color: rgba(43, 44, 44, 0.8);
+  background-color: #d0e6e6;
 }
 
 .aboutMe__title,
@@ -53,6 +77,53 @@ nav ul li a {
   justify-content: space-evenly;
 }
 
+.aboutMe__title h1,
+.work__title h1,
+.contact__title h1,
+.resume__title h1 {
+  padding-right: 10px;
+}
+
+.work__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 300px;
+}
+.work__division1 img,
+.work__division2 img {
+  opacity: 0.5;
+  border: 5px solid #490e27;
+}
+
+.work__division1:hover img {
+  opacity: 1;
+}
+.work__division1:hover {
+  box-shadow: inset 0px 0px 8px var(--azul), 0 0 15px var(--azul);
+  transform: scale(0.9);
+}
+
+.work__division2__img:hover {
+  box-shadow: inset 0px 0px 8px var(--azul), 0 0 15px var(--azul);
+  opacity: 1;
+  transform: scale(0.9);
+}
+.first__project {
+  flex: 1;
+  width: 800px;
+  height: 400px;
+}
+.work__division2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.work__division2 img {
+  height: 300px;
+  width: 600px;
+  margin: 0px 2.5px 0px 2.5px;
+}
 .aboutMe__info,
 .work__info,
 .contact__info,
@@ -68,4 +139,19 @@ h1 {
 .v-line {
   border-left: thick solid #000;
   height: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .work__division1 img {
+    width: 500px;
+  }
+
+  .work__division2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .work__division2 img {
+    width: 500px;
+  }
 }
