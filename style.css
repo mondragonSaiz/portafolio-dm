@@ -24,6 +24,10 @@ header {
   );
 }
 
+header p {
+  font-size: 1.2rem;
+}
+
 .avatar__image {
   display: flex;
   align-items: center;
@@ -58,9 +62,9 @@ nav ul li a {
 .work__container,
 .contactMe__container,
 .resume__container {
+  box-sizing: border-box;
   align-items: center;
   margin-top: 15px;
-  box-sizing: border-box;
   min-height: 300px;
   display: flex;
   padding-right: 10px;
@@ -90,6 +94,10 @@ nav ul li a {
   align-items: center;
   min-height: 300px;
 }
+.work__division1 img {
+  width: 900px;
+  height: auto;
+}
 .work__division1 img,
 .work__division2 img {
   opacity: 0.5;
@@ -97,17 +105,22 @@ nav ul li a {
 }
 
 .work__division1:hover img {
+  transform: scale(1);
   opacity: 1;
 }
+
 .work__division1:hover {
   box-shadow: inset 0px 0px 8px var(--azul), 0 0 15px var(--azul);
+}
+
+.first__project__img {
   transform: scale(0.9);
 }
 
 .work__division2__img:hover {
   box-shadow: inset 0px 0px 8px var(--azul), 0 0 15px var(--azul);
   opacity: 1;
-  transform: scale(0.9);
+  transform: scale(1);
 }
 .first__project {
   flex: 1;
@@ -116,13 +129,16 @@ nav ul li a {
 }
 .work__division2 {
   display: flex;
+  justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
 }
 .work__division2 img {
-  height: 300px;
-  width: 600px;
-  margin: 0px 2.5px 0px 2.5px;
+  transform: scale(0.9);
+  background-size: cover;
+  width: 550px;
+  height: 200px;
+  margin: 0px 2.5px 5px 2.5px;
 }
 .aboutMe__info,
 .work__info,
@@ -141,9 +157,30 @@ h1 {
   height: 100px;
 }
 
+@media screen and (max-width: 992px) {
+  .work__division1 img {
+    box-sizing: border-box;
+    width: 550px;
+    height: 400px;
+  }
+
+  .work__division2 {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .work__division2 img {
+    box-sizing: border-box;
+    width: 300px;
+    height: 200px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .work__division1 img {
-    width: 500px;
+    margin-bottom: 5px;
+    width: 550px;
+    height: 400px;
   }
 
   .work__division2 {
@@ -152,6 +189,7 @@ h1 {
   }
 
   .work__division2 img {
-    width: 500px;
+    margin-bottom: 5px;
+    width: 480px;
   }
 }
