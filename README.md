@@ -1,2 +1,33 @@
 # portafolio-dm
-my personal portafolio of my bootcamp projects
+
+Creation based on the desgin of the project mock up of my personal portafolio where I'll display all the projects I'm going to work on during this bootcamp.
+
+#Technical Acceptance Criteria: 40%
+
+- Satisfies all of the preceding acceptance criteria.
+
+#Deployment: 32%
+
+- Application deployed at live URL.
+
+- Application loads with no errors.
+
+- Application GitHub URL submitted.
+
+- GitHub repository contains application code.
+
+#Application Quality: 15%
+
+- Application resembles the mock-up functionality provided in the Challenge instructions
+
+#Repository Quality: 13%
+
+- Repository has a unique name.
+
+- Repository follows best practices for file structure and naming conventions.
+
+- Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
+
+- Repository contains multiple descriptive commit messages.
+
+- Repository contains a quality readme with description, screenshot, link to deployed application.
