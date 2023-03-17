@@ -31,3 +31,7 @@ Creation based on the desgin of the project mock up of my personal portafolio wh
 - Repository contains multiple descriptive commit messages.
 
 - Repository contains a quality readme with description, screenshot, link to deployed application.
+
+#Screenshot :
+![Screen Shot 2023-03-16 at 17 30 25](https://user-images.githubusercontent.com/71055501/225787711-051a6a2c-458a-44f3-b479-bd730fe649a6.png)
+
